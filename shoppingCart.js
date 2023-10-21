@@ -1,11 +1,6 @@
-const BASE_JSON_BIN_URL = "https://api.jsonbin.io/v3/b/6533862612a5d376598e8f81";
-const BIN_ID = "6533862612a5d376598e8f81";
-
-
 const prompt = require('prompt-sync')();
 
-
-  const shoppingCart = [];
+let shoppingCart = [];
 
   function showCartMenu() {
     while (true) {
@@ -112,3 +107,5 @@ const prompt = require('prompt-sync')();
 
   showCartMenu();
 
+ 
+  
