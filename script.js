@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function(){
 
     let product = await fetchProducts();
-
+    let shoppingCart = [];
     console.log(typeof product, product);
 
     function renderProducts(productList) {
