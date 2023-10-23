@@ -123,14 +123,14 @@ document.addEventListener('DOMContentLoaded', async function(){
         
         const totalPrice = calculateTotal(shoppingCart);
         document.getElementById('total-price').textContent = (totalPrice.toFixed(2) / 100).toString();
-        document.querySelector("#purchase-button").addEventListener('click', async function(){
-            alert('Thank you for your purchase!')
-            await savetoJSONBin(shoppingCart);
-            shoppingCart.length = 0;
-            updateDisplayCart(shoppingCart);
-        })
+        
     }
-
+    document.querySelector("#purchase-button").addEventListener('click', async function(){
+        alert('Thank you for your purchase!')
+        await savetoJSONBin(shoppingCart);
+        shoppingCart.length = 0;
+        updateDisplayCart(shoppingCart);
+    })
     renderProducts(product)       
     
 })
